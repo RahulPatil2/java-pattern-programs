@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "category_id": "1",
+      "category_name": "Important"
+    },
+    {
+      "category_id": "2",
+      "category_name": "Star"
+    },
+    {
+      "category_id": "3",
+      "category_name": "Numeric"
+    },
+    {
+      "category_id": "4",
+      "category_name": "Alphabetic"
+    },
+    {
+      "category_id": "5",
+      "category_name": "Other"
+    }
+  ]
+}

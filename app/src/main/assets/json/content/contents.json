@@ -1,0 +1,697 @@
+{
+  "items": [
+    {
+      "title": "* \n* * \n* * * \n* * * * \n* * * * * ",
+      "category": "1",
+      "details": "public class PatternExample {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print * for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 \n1 2 \n1 2 3 \n1 2 3 4 \n1 2 3 4 5 ",
+      "category": "1",
+      "details": "public class PatternExample {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print numbers from 1 to i for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A \nA B \nA B C \nA B C D \nA B C D E ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print alphabets from A to the current row letter for each row\n            for (char j = 'A'; j < 'A' + i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "       * \n     * * \n    * * * \n  * * * * \n * * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the stars\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print stars for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "       1 \n     1 2 \n   1 2 3 \n 1 2 3 4 \n1 2 3 4 5 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the numbers\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print numbers for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "        A \n      A B \n    A B C \n  A B C D \n A B C D E ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= i; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "           * \n        * * * \n      * * * * * \n    * * * * * * * \n * * * * * * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the stars\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print stars for each row\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "           A \n        A B C \n      A B C D E \n    A B C D E F G \n A B C D E F G H I ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\"  \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n* * * * \n* * * \n* * \n* ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the * in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n1 2 3 4 \n1 2 3 \n1 2 \n1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the numbers in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(j + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \nA B C D \nA B C \nA B \nA ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the alphabets in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print((char) ('A' + j) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n * * * * \n  * * * \n   * * \n    * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop for printing all rows\n        for (int i = rows; i >= 1; i--) {\n\n            // Inner loop for printing white spaces\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop for printing star *\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n 1 2 3 4 \n   1 2 3 \n     1 2 \n       1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop to iterate over rows in reverse order\n        for (int i = rows; i >= 1; i--) {\n\n            // Inner loop to print spaces before the numbers\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print numbers for each row in reverse order\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \n A B C D \n   A B C \n     A B \n       A ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space < i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= rows - i + 1; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * * * * \n   * * * * * * * \n      * * * * * \n         * * * \n            * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing stars *\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print(\"* \");\n            }\n\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 6 7 8 9 \n   1 2 3 4 5 6 7 \n      1 2 3 4 5 \n         1 2 3 \n            1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing numbers\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E F G H I \n   A B C D E F G \n     A B C D E \n       A B C \n          A ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing alphabets\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print((char)('A' + k) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    * * * * * \n   * * * * * \n  * * * * * \n * * * * * \n* * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print * star in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    1 2 3 4 5 \n   1 2 3 4 5 \n  1 2 3 4 5 \n 1 2 3 4 5 \n1 2 3 4 5 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print number in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    A B C D E \n   A B C D E \n  A B C D E \n A B C D E \nA B C D E ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print alphabet in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print((char) (k + 'A') + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "            * \n         * * * \n       * * * * * \n     * * * * * * * \n  * * * * * * * * * \n     * * * * * * * \n       * * * * * \n         * * * \n           * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print asterisks *\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "            1 \n         1 2 3 \n       1 2 3 4 5 \n    1 2 3 4 5 6 7 \n  1 2 3 4 5 6 7 8 9 \n     1 2 3 4 5 6 7 \n      1 2 3 4 5 \n         1 2 3 \n           1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print numbers\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          A \n        A B C \n      A B C D E \n    A B C D E F G \n A B C D E F G H I \n    A B C D E F G \n      A B C D E \n        A B C \n          A ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print alphabets\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print((char)('A' + k) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   * * * * * * * \n     * * * * * \n       * * * \n          * \n       * * * \n     * * * * * \n   * * * * * * * \n * * * * * * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print star *\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1 2 3 4 5 6 7 \n     1 2 3 4 5 \n       1 2 3 \n          1 \n       1 2 3 \n     1 2 3 4 5 \n   1 2 3 4 5 6 7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print number\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print((k + 1) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A B C D E F G \n     A B C D E \n       A B C \n           A \n       A B C \n     A B C D E \n   A B C D E F G \n A B C D E F G H I ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print((char) (k + 'A') + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n*          * \n*          * \n*          * \n* * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print * star in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print(\"* \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n1           5 \n1           5 \n1           5 \n1 2 3 4 5 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print number in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print((j + 1) + \" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \nA            E \nA            E \nA            E \nA B C D E ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print alphabet in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print((char) (j + 'A') + \" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          * \n       *     * \n     *          * \n   *                * \n * * * * * * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print stars * and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          1 \n       1       3 \n     1             5 \n   1                    7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print numbers and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "             A \n         A      C \n      A              E \n    A                    G \n A B C D E F G H I ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   *                 * \n     *            * \n        *      * \n            * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print star* and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1                  7 \n     1             5 \n       1       3 \n            1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print number and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A                     G \n     A               E \n       A        C \n            A ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         * \n       *   * \n     *       * \n   *           * \n *               * \n   *           * \n     *       * \n       *   * \n         * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < Math.abs(rows - 1 - i); j++) {\n                System.out.print(\"  \");\n            }\n\n            // Second inner loop to print stars * and inner whitespaces\n            for (int k = 0; k < 2 * (rows - Math.abs(rows - 1 - i)) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - Math.abs(rows - 1 - i)) - 2) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         1 \n       1   3 \n     1       5 \n   1           7 \n 1               9 \n   1           7 \n     1       5 \n       1   3 \n         1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < Math.abs(rows - 1 - i); j++) {\n                System.out.print(\"  \");\n            }\n\n            // Second inner loop to print numbers and inner whitespaces\n            int num = 1;\n            for (int k = 0; k < 2 * (rows - Math.abs(rows - 1 - i)) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - Math.abs(rows - 1 - i)) - 2) {\n                    System.out.print(num + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n                num += 2;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         A \n       A   C \n     A       E \n   A           G \n A               I \n   A           G \n     A       E \n       A   C \n         A ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n        char startChar = 'A';\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < Math.abs(rows - 1 - i); j++) {\n                System.out.print(\"  \");\n            }\n\n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * (rows - Math.abs(rows - 1 - i)) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - Math.abs(rows - 1 - i)) - 2) {\n                    System.out.print(startChar + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n                startChar += 2;\n            }\n            System.out.println();\n            startChar = 'A';\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   *                 * \n     *            * \n       *       * \n            * \n       *        * \n     *            * \n   *                 * \n * * * * * * * * * ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print star * and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1                   7 \n     1             5 \n       1         3 \n             1 \n       1         3 \n     1             5 \n   1                  7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print numbers and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A                   G \n     A               E \n       A           C \n              A \n        A          C \n     A               E \n   A                   G \n A B C D E F G H I ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 \n2 3 \n4 5 6 \n7 8 9 10 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4;\n        int n = 1;\n\n        // Outer loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // Inner loop to print numbers in each row\n            for (int j = 0; j <= i; j++) {\n                System.out.print(n + \" \");\n                n++;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A \nB C \nD E F \nG H I J ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4;\n        char n = 'A';\n\n        // Outer loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // Inner loop to print alphabets in each row\n            for (int j = 0; j <= i; j++) {\n                System.out.print(n + \" \");\n                n++;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    1 \n   1 1 \n  1 2 1 \n 1 3 3 1 \n1 4 6 4 1 ",
+      "category": "1",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop for rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop 1 for leading white spaces\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(\" \");\n            }\n\n            int C = 1; // Coefficient\n\n            // Inner loop 2 for printing numbers\n            for (int k = 1; k <= i; k++) {\n                System.out.print(C + \" \");\n                C = C * (i - k) / k;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+
+
+
+
+
+
+
+    {
+      "title": "* * * *\n* * * *\n* * * *\n* * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for printing asterisks in each row\n            for (int j = 0; j < 4; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * *\n*       *\n*       *\n* * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for each column in each row\n            for (int j = 0; j < 4; j++) {\n                // Check if it's the first or last row, or the first or last column\n                // If so, print an asterisk, otherwise print a space\n                if (i == 0 || i == rows - 1 || j == 0 || j == 3) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * *\n\t* * * *\n\t\t* * * *\n\t\t\t* * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for printing spaces before the asterisks\n            for (int j = 0; j < i; j++) {\n                System.out.print(\" \");\n            }\n            // Loop for printing the asterisks in each row\n            for (int j = 0; j < 4; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n        int cols = 6; // Number of columns in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for printing asterisks in each row\n            for (int j = 0; j < cols; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * *\n*             *\n*             *\n* * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n        int cols = 6; // Number of columns in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for each column in each row\n            for (int j = 0; j < cols; j++) {\n                // Check if it's the first or last row, or the first or last column\n                // If so, print an asterisk, otherwise print a space\n                if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * *\n\t* * * * * *\n\t\t* * * * * *\n\t\t\t* * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n        int cols = 6; // Number of columns in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for printing spaces before the asterisks\n            for (int j = 0; j < i; j++) {\n                System.out.print(\" \");\n            }\n            // Loop for printing the asterisks in each row\n            for (int j = 0; j < cols; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "   * * * *\n\t\t* * * *\n\t* * * *\n* * * *\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n        int cols = 4; // Number of columns in the pattern\n\n        // Loop for each row\n        for (int i = 0; i < rows; i++) {\n            // Loop for printing spaces before the asterisks\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n            // Loop for printing the asterisks in each row\n            for (int j = 0; j < cols; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "*\n* *\n* * *\n* * * *\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n\n        // Loop for each row\n        for (int i = 1; i <= rows; i++) {\n            // Loop for printing asterisks in each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         * \n       * * \n     * * * \n   * * * * \n * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop is for printing the rows\n        for (int i = 0; i < rows; i++) {\n\n            // loop for printing leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // loop for printing * character\n            for (int k = 0; k <= i; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "\t\t\t*\n\t\t* * *\n\t* * * * *\n* * * * * * *\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // Number of rows in the pattern\n\n        // Loop for each row\n        for (int i = 1; i <= rows; i++) {\n            // Loop for printing spaces before the asterisks\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            // Loop for printing asterisks in each row\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println(); // Move to the next line after each row\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         *\n    *       *\n *            *\n* * * * * * *\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the pyramid\n\n        // Upper part of the pyramid\n        for (int i = 1; i <= rows; i++) {\n            // Print spaces\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            // Print first star\n            System.out.print(\"*\");\n            // Print spaces inside the pyramid\n            for (int j = 1; j <= 2 * i - 3; j++) {\n                System.out.print(\" \");\n            }\n            // Print last star (for rows greater than 1)\n            if (i > 1) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n\n        // Lower part of the pyramid (base)\n        for (int i = 1; i <= 2 * rows - 1; i++) {\n            System.out.print(\"*\");\n        }\n\n        System.out.println();\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * *\n * * * * *\n  * * *\n   *\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the inverted pyramid\n\n        // Upper part of the pyramid\n        for (int i = rows; i >= 1; i--) {\n            // Print spaces\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            // Print stars\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "*     *\n *   *\n  * *\n   *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the inverted hollow pyramid\n\n        // Upper part of the pyramid\n        for (int i = 1; i <= rows; i++) {\n            // Print spaces\n            for (int space = 1; space < i; space++) {\n                System.out.print(\" \");\n            }\n            // Print first star\n            System.out.print(\"*\");\n            // Print spaces inside the pyramid\n            for (int j = 1; j <= 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n            // Print last star (for rows greater than 1)\n            if (i != rows) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "*\n* *\n* * *\n* * * *\n* * *\n* *\n*\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the half diamond\n\n        // Upper part of the half diamond\n        for (int i = 1; i <= rows; i++) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n\n        // Lower part of the half diamond\n        for (int i = rows - 1; i >= 1; i--) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * *\n * * *\n  * *\n   *\n  * *\n * * *\n* * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the inverted half diamond\n\n        // Upper part of the inverted half diamond\n        for (int i = rows; i >= 1; i--) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n\n        // Lower part of the inverted half diamond\n        for (int i = 2; i <= rows; i++) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "       *\n     **\n   ***\n ****\n   ***\n     **\n       *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the inverted half diamond\n\n        // Upper part of the inverted half diamond\n        for (int i = 1; i <= rows; i++) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n\n        // Lower part of the inverted half diamond\n        for (int i = rows - 1; i >= 1; i--) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "\t\t\t\t*\n\t\t* * *\n\t* * * * *\n* * * * * * *\n\t* * * * *\n\t\t* * *\n\t\t\t*\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4; // You can change this value to adjust the size of the diamond\n\n        // Upper part of the diamond\n        for (int i = 1; i <= rows; i++) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n\n        // Lower part of the diamond\n        for (int i = rows - 1; i >= 1; i--) {\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * *\n* * * *\n* * *\n* *\n*\n",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // You can change this value to adjust the size of the inverted half pyramid\n\n        for (int i = rows; i >= 1; i--) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * * * *\n*   *             *  *\n*    *          *    *\n*      *      *      *\n*         *           *\n*       *     *      *\n*    *          *    *\n*  *              *  *\n* * * * * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 9;\n\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= n; j++) {\n                if (i == 1 || i == n || j == 1 || j == n - i + 1 || i == j || j == n) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "*\n*  *\n*     *\n*        *\n*           *\n*              *\n* * * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 7;\n\n        // Upper part of the pattern\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= i; j++) {\n                if (j == 1 || j == i) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n\n        // Lower part of the pattern\n        System.out.print(\"* \");\n        for (int i = 1; i < n; i++) {\n            System.out.print(\"* \");\n        }\n        System.out.println();\n    }\n}\n"
+    },
+    {
+      "title": "                *\n           *    *\n        *       *\n      *         *\n    *           *\n  *             *\n* * * * * * *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 7; // You can change this value to adjust the size of the pattern\n        int m = 1;\n\n        // Upper part of the pattern\n        for (int i = n; i >= 1; i--) {\n            for (int j = 1; j <= i - 1; j++) {\n                System.out.print(\" \");\n            }\n            for (int k = 1; k <= m; k++) {\n                if (k == 1 || k == m || m == n) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println();\n            m++;\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * *\n*             *\n*           *\n*         *\n*     *\n*   *\n*",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 7; // You can change this value to adjust the size of the pattern\n\n        // Upper part of the pattern\n        for (int i = n; i >= 1; i--) {\n            for (int j = 1; j <= i; j++) {\n                if (j == 1 || j == i || i == n) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * *\n *              *\n   *            *\n     *          *\n       *        *\n          *     *\n                *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 7;\n        int m = n;\n\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j < i; j++) {\n                System.out.print(\" \");\n            }\n            for (int k = 1; k <= m; k++) {\n                if (i == 1 || k == 1 || k == m) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            m--;\n\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "     *****\n    ****\n   ***\n  **\n*\n  **\n   ***\n    ****\n     *****",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= n - i; j++) {\n                System.out.print(\" \");\n            }\n            for (int k = 0; k <= n - i; k++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n        for (int i = 1; i < n; i++) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\" \");\n            }\n            for (int k = 1; k <= i + 1; k++) {\n                System.out.print(\"*\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "      +\n      +\n      +\n+++++++\n      +\n      +\n      +",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 7;\n        for (int i = 1; i <= n; i++) {\n            if (i == ((n / 2) + 1)) {\n                for (int j = 1; j <= n; j++) {\n                    System.out.print(\"+\");\n                }\n            } else {\n                for (int j = 1; j <= n / 2; j++) {\n                    System.out.print(\" \");\n                }\n                System.out.print(\"+\");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+
+
+    {
+      "title": "*        *\n *      * \n  *    *  \n   *  *   \n     *    \n   *  *   \n  *    *  \n *      * \n*        *",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n        int m = 2 * n - 1;\n        for (int i = 1; i <= m; i++) {\n            for (int j = 1; j <= m; j++) {\n                if (i == j || j == (m - i + 1)) {\n                    System.out.print(\"*\");\n                } else {\n                    System.out.print(\" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* \n* * \n* * * \n* * * * \n* * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop for printing rows\n        for (int i = 0; i < rows; i++) {\n \n            // Second loop for printing characters in each row\n            for (int j = 0; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "       * \n     * * \n    * * * \n  * * * * \n * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the stars\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print stars for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n* * * * \n* * * \n* * \n* ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the * in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n * * * * \n  * * * \n   * * \n    * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop for printing all rows\n        for (int i = rows; i >= 1; i--) {\n\n            // Inner loop for printing white spaces\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop for printing star *\n            for (int j = 1; j <= i; j++) {\n                System.out.print(\"* \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * * * * * \n   * * * * * * * \n      * * * * * \n         * * * \n            * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing stars *\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print(\"* \");\n            }\n\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    * * * * * \n   * * * * * \n  * * * * * \n * * * * * \n* * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print * star in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "            * \n         * * * \n       * * * * * \n     * * * * * * * \n  * * * * * * * * * \n     * * * * * * * \n       * * * * * \n         * * * \n           * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print asterisks *\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   * * * * * * * \n     * * * * * \n       * * * \n          * \n       * * * \n     * * * * * \n   * * * * * * * \n * * * * * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print star *\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print(\"* \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "* * * * * \n*          * \n*          * \n*          * \n* * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print * star in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print(\"* \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          * \n       *     * \n     *          * \n   *                * \n * * * * * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print stars * and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "           * \n        * * * \n      * * * * * \n    * * * * * * * \n * * * * * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the stars\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print stars for each row\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(\"*\");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   *                 * \n     *            * \n        *      * \n            * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print star* and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " * * * * * * * * * \n   *                 * \n     *            * \n       *       * \n            * \n       *        * \n     *            * \n   *                 * \n * * * * * * * * * ",
+      "category": "2",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print star * and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print(\"* \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+
+    {
+      "title": "1 \n1 2 \n1 2 3 \n1 2 3 4 \n1 2 3 4 5 ",
+      "category": "3",
+      "details": "public class PatternExample {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print numbers from 1 to i for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "       1 \n     1 2 \n   1 2 3 \n 1 2 3 4 \n1 2 3 4 5 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the numbers\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print numbers for each row\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n1 2 3 4 \n1 2 3 \n1 2 \n1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the numbers in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(j + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n 1 2 3 4 \n   1 2 3 \n     1 2 \n       1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop to iterate over rows in reverse order\n        for (int i = rows; i >= 1; i--) {\n\n            // Inner loop to print spaces before the numbers\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print numbers for each row in reverse order\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 6 7 8 9 \n   1 2 3 4 5 6 7 \n      1 2 3 4 5 \n         1 2 3 \n            1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing numbers\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    1 2 3 4 5 \n   1 2 3 4 5 \n  1 2 3 4 5 \n 1 2 3 4 5 \n1 2 3 4 5 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print number in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "            1 \n         1 2 3 \n       1 2 3 4 5 \n    1 2 3 4 5 6 7 \n  1 2 3 4 5 6 7 8 9 \n     1 2 3 4 5 6 7 \n      1 2 3 4 5 \n         1 2 3 \n           1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print numbers\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print(k + 1 + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1 2 3 4 5 6 7 \n     1 2 3 4 5 \n       1 2 3 \n          1 \n       1 2 3 \n     1 2 3 4 5 \n   1 2 3 4 5 6 7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print number\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print((k + 1) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 2 3 4 5 \n1           5 \n1           5 \n1           5 \n1 2 3 4 5 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print number in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print((j + 1) + \" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1                  7 \n     1             5 \n       1       3 \n            1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print number and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         1 \n       1   3 \n     1       5 \n   1           7 \n 1               9 \n   1           7 \n     1       5 \n       1   3 \n         1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < Math.abs(rows - 1 - i); j++) {\n                System.out.print(\"  \");\n            }\n\n            // Second inner loop to print numbers and inner whitespaces\n            int num = 1;\n            for (int k = 0; k < 2 * (rows - Math.abs(rows - 1 - i)) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - Math.abs(rows - 1 - i)) - 2) {\n                    System.out.print(num + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n                num += 2;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " 1 2 3 4 5 6 7 8 9 \n   1                   7 \n     1             5 \n       1         3 \n             1 \n       1         3 \n     1             5 \n   1                  7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print numbers and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1 \n2 3 \n4 5 6 \n7 8 9 10 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4;\n        int n = 1;\n\n        // Outer loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // Inner loop to print numbers in each row\n            for (int j = 0; j <= i; j++) {\n                System.out.print(n + \" \");\n                n++;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    1 \n   1 1 \n  1 2 1 \n 1 3 3 1 \n1 4 6 4 1 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop for rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop 1 for leading white spaces\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print(\" \");\n            }\n\n            int C = 1; // Coefficient\n\n            // Inner loop 2 for printing numbers\n            for (int k = 1; k <= i; k++) {\n                System.out.print(C + \" \");\n                C = C * (i - k) / k;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          1 \n       1       3 \n     1             5 \n   1                    7 \n 1 2 3 4 5 6 7 8 9 ",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print numbers and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print((k + 1) + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1                   1\n12               21\n123          321\n1234      4321\n12 345 54321",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= n; j++) {\n                if (j <= i)\n                    System.out.print(j);\n                else\n                    System.out.print(\" \");\n            }\n\n            for (int j = n; j >= 1; j--) {\n                if (j <= i)\n                    System.out.print(j);\n                else\n                    System.out.print(\" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "12345\n1234\n123\n12\n1\n\n1\n12\n123\n1234\n12345",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // Upper half of the pattern\n        for (int i = n; i >= 0; i--) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j);\n            }\n            System.out.println();\n        }\n\n        // Lower half of the pattern\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j);\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1\n123\n12345\n1234567\n12345\n123\n1",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 7; i += 2) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j);\n            }\n            System.out.println();\n        }\n        for (int i = 5; i >= 1; i -= 2) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(j);\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "1       1\n 2     2 \n  3   3  \n    4   \n  3   3  \n 2     2 \n1        1",
+      "category": "3",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 4; // You can change this value to adjust the size of the pattern\n\n        // Upper part of the pattern\n        for (int i = 1; i <= n; i++) {\n            // Print leading spaces\n            for (int space = 1; space < i; space++) {\n                System.out.print(\" \");\n            }\n            // Print the number and spaces inside the pattern\n            System.out.print(i);\n            for (int space = 1; space <= 2 * (n - i) - 1; space++) {\n                System.out.print(\" \");\n            }\n            if (i != n) {\n                System.out.print(i);\n            }\n            System.out.println();\n        }\n\n        // Lower part of the pattern\n        for (int i = n - 1; i >= 1; i--) {\n            // Print leading spaces\n            for (int space = 1; space < i; space++) {\n                System.out.print(\" \");\n            }\n            // Print the number and spaces inside the pattern\n            System.out.print(i);\n            for (int space = 1; space <= 2 * (n - i) - 1; space++) {\n                System.out.print(\" \");\n            }\n            System.out.print(i);\n            System.out.println();\n        }\n    }\n}\n"
+    },
+
+    {
+      "title": "A \nA B \nA B C \nA B C D \nA B C D E ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print alphabets from A to the current row letter for each row\n            for (char j = 'A'; j < 'A' + i; j++) {\n                System.out.print(j + \" \");\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "        A \n      A B \n    A B C \n  A B C D \n A B C D E ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= i; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "           A \n        A B C \n      A B C D E \n    A B C D E F G \n A B C D E F G H I ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5; // Number of rows in the pattern\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space <= rows - i; space++) {\n                System.out.print(\"  \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= 2 * i - 1; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \nA B C D \nA B C \nA B \nA ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print the alphabets in each row\n            for (int j = 0; j < rows - i; j++) {\n                System.out.print((char) ('A' + j) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \n A B C D \n   A B C \n     A B \n       A ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // Outer loop to iterate over rows\n        for (int i = 1; i <= rows; i++) {\n\n            // Inner loop to print spaces before the letters\n            for (int space = 1; space < i; space++) {\n                System.out.print(\" \");\n            }\n\n            // Inner loop to print letters for each row\n            char letter = 'A';\n            for (int j = 1; j <= rows - i + 1; j++) {\n                System.out.print(letter + \" \");\n                letter++;\n            }\n\n            // Move to the next line after each row\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E F G H I \n   A B C D E F G \n     A B C D E \n       A B C \n          A ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first loop for printing all rows\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop for printing leading white spaces\n            for (int j = 0; j < 2 * i; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop for printing alphabets\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                System.out.print((char)('A' + k) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "    A B C D E \n   A B C D E \n  A B C D E \n A B C D E \nA B C D E ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n\n            // first inner loop to print white spaces\n            for (int j = 0; j < rows - i - 1; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print alphabet in each row\n            for (int k = 0; k < rows; k++) {\n                System.out.print((char) (k + 'A') + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "          A \n        A B C \n      A B C D E \n    A B C D E F G \n A B C D E F G H I \n    A B C D E F G \n      A B C D E \n        A B C \n          A ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // first outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // assigning values to the comparator according to the row number\n            int comp;\n            if (i < n) {\n                comp = 2 * (n - i) - 1;\n            } else {\n                comp = 2 * (i - n + 1) + 1;\n            }\n\n            // first inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // second inner loop to print alphabets\n            for (int k = 0; k < 2 * n - comp; k++) {\n                System.out.print((char)('A' + k) + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A B C D E F G \n     A B C D E \n       A B C \n           A \n       A B C \n     A B C D E \n   A B C D E F G \n A B C D E F G H I ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n \n            // Assigning comparator\n            int comp;\n            if (i < rows) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * rows - i) - 3;\n            }\n \n            // First inner loop to print leading spaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets\n            for (int k = 0; k < 2 * rows - comp; k++) {\n                System.out.print((char) (k + 'A') + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A B C D E \nA            E \nA            E \nA            E \nA B C D E ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // Outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // Inner loop to print alphabet in each row\n            for (int j = 0; j < rows; j++) {\n                // Statement to check boundary condition\n                if (i > 0 && i < rows - 1 && j > 0 && j < rows - 1) {\n                    System.out.print(\"  \");\n                } else {\n                    System.out.print((char) (j + 'A') + \" \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "             A \n         A      C \n      A              E \n    A                    G \n A B C D E F G H I ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First outer loop to iterate through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < 2 * (rows - i) - 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * i + 1; k++) {\n                if (k == 0 || k == 2 * i || i == rows - 1) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A                     G \n     A               E \n       A        C \n            A ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n \n        // First loop iterating through each row\n        for (int i = 0; i < rows; i++) {\n \n            // First inner loop to print leading white space\n            for (int j = 0; j < 2 * i + 1; j++) {\n                System.out.print(\" \");\n            }\n \n            // Second inner loop to print alphabets and hollow white space\n            for (int k = 0; k < 2 * (rows - i) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - i) - 2 || i == 0) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "         A \n       A   C \n     A       E \n   A           G \n A               I \n   A           G \n     A       E \n       A   C \n         A ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 5;\n        char startChar = 'A';\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * rows - 1; i++) {\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < Math.abs(rows - 1 - i); j++) {\n                System.out.print(\"  \");\n            }\n\n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * (rows - Math.abs(rows - 1 - i)) - 1; k++) {\n                if (k == 0 || k == 2 * (rows - Math.abs(rows - 1 - i)) - 2) {\n                    System.out.print(startChar + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n                startChar += 2;\n            }\n            System.out.println();\n            startChar = 'A';\n        }\n    }\n}\n"
+    },
+    {
+      "title": " A B C D E F G H I \n   A                   G \n     A               E \n       A           C \n              A \n        A          C \n     A               E \n   A                   G \n A B C D E F G H I ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int n = 5;\n\n        // First outer loop to iterate through each row\n        for (int i = 0; i < 2 * n - 1; i++) {\n\n            // Assigning comparator\n            int comp;\n            if (i < n) {\n                comp = 2 * i + 1;\n            } else {\n                comp = 2 * (2 * n - i) - 3;\n            }\n\n            // First inner loop to print leading whitespaces\n            for (int j = 0; j < comp; j++) {\n                System.out.print(\" \");\n            }\n\n            // Second inner loop to print alphabets and inner whitespaces\n            for (int k = 0; k < 2 * n - comp; k++) {\n                if (k == 0 || k == 2 * n - comp - 1 || i == 0 || i == 2 * n - 2) {\n                    System.out.print((char) (k + 'A') + \" \");\n                } else {\n                    System.out.print(\"  \");\n                }\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+    {
+      "title": "A \nB C \nD E F \nG H I J ",
+      "category": "4",
+      "details": "public class Main {\n    public static void main(String[] args) {\n        int rows = 4;\n        char n = 'A';\n\n        // Outer loop to print all rows\n        for (int i = 0; i < rows; i++) {\n\n            // Inner loop to print alphabets in each row\n            for (int j = 0; j <= i; j++) {\n                System.out.print(n + \" \");\n                n++;\n            }\n            System.out.println();\n        }\n    }\n}\n"
+    },
+
+
+    {
+      "title": "Write a Java Program to reverse a string without using String inbuilt function",
+      "category": "5",
+      "details": "public class FinalReverseWithoutUsingStringMethods {\n  \n     public static void main(String[] args) {\n          // TODO Auto-generated method stub\n          String str = \"Automation\";\n          StringBuilder str2 = new StringBuilder();\n          str2.append(str);\n          str2 = str2.reverse();     // used string builder to reverse\n         System.out.println(str2);\n          }\n  \n}"
+    },
+    {
+      "title": "Write a Java Program to reverse a string without using String inbuilt function reverse()",
+      "category": "5",
+      "details": "public class FinalReverseWithoutUsingInbuiltFunction {\n    public static void main(String[] args) {\n        String str = \"Saket Saurav\";\n        char chars[] = str.toCharArray();  // converted to character array and printed in reverse order\n        for(int i= chars.length-1; i&gt;=0; i--) {\n            System.out.print(chars[i]);\n        }\n    }\n}"
+    },
+    {
+      "title": "Write a Java Program to swap two numbers using the third variable",
+      "category": "5",
+      "details": "import java.util.Scanner;\n \npublic class SwapTwoNumbers {\n \n    public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        int x, y, temp;\n        System.out.println(\"Enter x and y\");\n        Scanner in = new Scanner(System.in);\n        x = in.nextInt();\n        y = in.nextInt();\n        System.out.println(\"Before Swapping\" + x + y);\n        temp = x;\n        x = y;\n        y = temp;\n        System.out.println(\"After Swapping\" + x + y);\n         \n    }\n \n}"
+    },
+    {
+      "title": "Write a Java Program to swap two numbers without using the third variable",
+      "category": "5",
+      "details": "import java.util.Scanner;\n  \nclass SwapTwoNumberWithoutThirdVariable\n{\n   public static void main(String args[])\n   {\n      int x, y;\n      System.out.println(\"Enter x and y\");\n      Scanner in = new Scanner(System.in);\n  \n      x = in.nextInt();\n      y = in.nextInt();\n  \n      System.out.println(\"Before Swapping\\nx = \"+x+\"\\ny = \"+y);\n  \n      x = x + y;\n      y = x - y;\n      x = x - y;\n  \n      System.out.println(\"After Swapping without third variable\\nx = \"+x+\"\\ny = \"+y);\n   }\n}"
+    },
+    {
+      "title": "Write a Java Program to count the number of words in a string using HashMap",
+      "category": "5",
+      "details": "import java.util.HashMap;\n \npublic class FinalCountWords {\n \n    public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        String str = \"This this is is done by Saket Saket\";\n        String[] split = str.split(\" \");\n         \n                HashMap<String,Integer> map = new HashMap<String,Integer>();\n        for (int i=0; i<split.length; i++) {\n            if (map.containsKey(split[i])) {\n                int count = map.get(split[i]);\n                map.put(split[i], count+1);\n            }\n            else {\n                map.put(split[i], 1);\n            }\n        }\n        System.out.println(map);\n    }\n \n}"
+    },
+    {
+      "title": "Write a Java Program to iterate HashMap using While and advance for loop",
+      "category": "5",
+      "details": "import java.util.HashMap;\nimport java.util.Iterator;\nimport java.util.Map;\n \npublic class HashMapIteration {\n \n    public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        HashMap&lt;Integer,String&gt; map = new HashMap&lt;Integer,String&gt;();\n        map.put(2, \"Saket\");\n        map.put(25, \"Saurav\");\n        map.put(12, \"HashMap\");\n        System.out.println(map.size());\n        System.out.println(\"While Loop:\");\n        Iterator itr = map.entrySet().iterator();\n        while(itr.hasNext()) {\n            Map.Entry me = (Map.Entry) itr.next();\n            System.out.println(\"Key is \" + me.getKey() + \" Value is \" + me.getValue());\n        }\n        System.out.println(\"For Loop:\");\n        for(Map.Entry me2: map.entrySet()) {\n            System.out.println(\"Key is: \" + me2.getKey() + \" Value is: \" + me2.getValue());\n        }\n    }\n \n}"
+    },
+    {
+      "title": "Write a Java Program to find whether a number is prime or not",
+      "category": "5",
+      "details": "import java.util.Scanner;\n \npublic class Prime {\n \n    public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        int temp, num;\n        boolean isPrime = true;\n        Scanner in = new Scanner(System.in);\n        num = in.nextInt();\n        in.close();\n        for (int i = 2; i&lt;= num/2; i++) {\n            temp = num%i;\n            if (temp == 0) {\n                isPrime = false;\n                break;\n            }\n        }\n        if(isPrime) \n            System.out.println(num + \"number is prime\");\n            else\n                System.out.println(num + \"number is not a prime\");\n             \n         \n    }\n \n}import java.util.Scanner;\n \npublic class Prime {\n \n    public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        int temp, num;\n        boolean isPrime = true;\n        Scanner in = new Scanner(System.in);\n        num = in.nextInt();\n        in.close();\n        for (int i = 2; i&lt;= num/2; i++) {\n            temp = num%i;\n            if (temp == 0) {\n                isPrime = false;\n                break;\n            }\n        }\n        if(isPrime) \n            System.out.println(num + \"number is prime\");\n            else\n                System.out.println(num + \"number is not a prime\");\n             \n         \n    }\n \n}"
+    },
+    {
+      "title": "Write a Java Program to find whether a string or number is palindrome or not",
+      "category": "5",
+      "details": "import java.util.Scanner;\n \npublic class Palindrome {\n    public static void main (String[] args) {\n        String original, reverse = \"\";\n        Scanner in = new Scanner(System.in);\n        int length;\n        System.out.println(\"Enter the number or String\");\n        original = in.nextLine();\n        length = original.length();\n        for (int i =length -1; i>;=0; i--) {\n            reverse = reverse + original.charAt(i);\n        }\n        System.out.println(\"reverse is:\" +reverse);\n         \n        if(original.equals(reverse)) \n            System.out.println(\"The number is palindrome\");\n        else\n            System.out.println(\"The number is not a palindrome\");\n         \n    }\n}"
+    },
+    {
+      "title": "Write a Java Program for the Fibonacci series",
+      "category": "5",
+      "details": "import java.util.Scanner;\n \npublic class Fibonacci {\n    public static void main(String[] args) {\n        int num, a = 0,b=0, c =1;\n        Scanner in = new Scanner(System.in);\n        System.out.println(\"Enter the number of times\");\n        num = in.nextInt();\n        System.out.println(\"Fibonacci Series of the number is:\");\n        for (int i=0; i<num; i++) {\n            a = b;\n            b = c;\n            c = a+b;\n            System.out.println(a + \"\");    //if you want to print on the same line, use print()\n        }       \n    }\n}"
+    },
+    {
+      "title": "Write a Java Program to iterate ArrayList using for-loop, while-loop, and advance for-loop",
+      "category": "5",
+      "details": "import java.util.*;\n \npublic class arrayList {\n    public static void main(String[] args) {\n        ArrayList list = new ArrayList();\n        list.add(\"20\");\n        list.add(\"30\");\n        list.add(\"40\");\n        System.out.println(list.size());\n        System.out.println(\"While Loop:\");\n        Iterator itr = list.iterator();\n        while(itr.hasNext()) {\n            System.out.println(itr.next());\n        }\n        System.out.println(\"Advanced For Loop:\");\n        for(Object obj : list) {\n            System.out.println(obj);\n    }\n        System.out.println(\"For Loop:\");\n        for(int i=0; i&lt;list.size(); i++) {\n            System.out.println(list.get(i));\n        }\n}\n}"
+    },
+    {
+      "title": "Write a Java Program to demonstrate an explicit wait condition check",
+      "category": "5",
+      "details": "import java.util.concurrent.TimeUnit;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\nimport org.openqa.selenium.chrome.ChromeOptions;\nimport org.openqa.selenium.support.ui.ExpectedConditions;\nimport org.openqa.selenium.support.ui.WebDriverWait;\n \npublic class explicitWaitConditionCheck {\n \n           public static void main(String[] args) {\n                    // TODO Auto-generated method stub\n                    System.setProperty(\"webdriver.chrome.driver\", \"C:\\\\webdriver\\\\chromedriver.exe\");\n                   ChromeOptions options = new ChromeOptions();\n                   options.addArguments(\"--disable-arguments\");\n                   WebDriver driver = new ChromeDriver();\n                   driver.manage().window().maximize();\n                   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);\n                   driver.navigate().to(\"https://www.google.com\");\n                   WebElement element = driver.findElement(By.name(\"q\"));\n                    element.sendKeys(\"Testing\");\n                    element.submit();\n                    WebDriverWait wait = new WebDriverWait(driver, 20);\n \n                     WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(\"Software testing - Wikipedia\")));\nelement2.click();\n}}"
+    },
+    {
+      "title": "Write a Java Program to demonstrate Scroll up/ Scroll down",
+      "category": "5",
+      "details": "import java.util.concurrent.TimeUnit;\n \nimport org.openqa.selenium.By;\nimport org.openqa.selenium.JavascriptExecutor;\nimport org.openqa.selenium.Keys;\nimport org.openqa.selenium.WebDriver; \nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\n \npublic class ScrollDown {\n \n          public static void main(String[] args) {\n                   // TODO Auto-generated method stub\n                   System.setProperty(\"webdriver.chrome.driver\", \"C:\\\\webdriver\\\\chromedriver.exe\");\n                   WebDriver driver = new ChromeDriver();\n                   JavascriptExecutor js = (JavascriptExecutor) driver;\n                   driver.manage().window().maximize();\n                   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);\n                   driver.get(\"https://www.google.com\");\n                   WebElement element = driver.findElement(By.name(\"q\"));\n                   element.sendKeys(\"SoftwareTestingHelp\");\n                   element.sendKeys(Keys.ENTER);\n                    js.executeScript(\"window.scrollBy(0,1000)\");\n \n}\n \n}"
+    },
+    {
+      "title": "Write a Java Program to open all links of gmail.com",
+      "category": "5",
+      "details": "import java.util.concurrent.TimeUnit;\n \nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\n \npublic class openAllLinks {\n \n        public static void main(String[] args) {\n        // TODO Auto-generated method stub\n        System.setProperty(\"webdriver.chrome.drive\", \"C:\\\\webdriver\\\\chromedriver.exe\");\n        WebDriver driver = new ChromeDriver();\n        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);\n        driver.manage().window().maximize();\n        driver.get(\"https://www.gmail.com/\");\n        java.util.List&lt;WebElement&gt; link = driver.findElements(By.tagName(\"a\"));\n       System.out.println(link.size());\n \n       for (WebElement link2: link) {\n \n       //print the links i.e. http://google.com or https://www.gmail.com\n      System.out.println(link2.getAttribute(\"href\"));\n \n      //print the links text\n     System.out.println(link2.getText());\n}\n}\n}"
+    },
+    {
+      "title": "Write a Selenium code to switch to the previous tab",
+      "category": "5",
+      "details": "import java.awt.AWTException;\nimport java.awt.Robot;\nimport java.awt.event.KeyEvent;\nimport java.util.concurrent.TimeUnit;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.Keys;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\npublic class PreviousTab {\n          public static void main(String[] args) throws AWTException {\n               // TODO Auto-generated method stub\n              System.setProperty(\"webdriver.chrome.driver\", \"C:\\\\webdriver\\\\chromedriver.exe\");\n             WebDriver driver = new ChromeDriver();\n             driver.manage().window().maximize();\n             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);\n             driver.get(\"https://www.google.com\");\n             WebElement element1 = driver.findElement(By.name(\"q\"));\n             element1.sendKeys(\"software testing help\");\n             element1.sendKeys(Keys.ENTER);\n             String a = Keys.chord(Keys.CONTROL,Keys.RETURN);\n             driver.findElement(By.partialLinkText(\"Software Testing Help - A Must Visit Software Testing Portal\")).sendKeys(a);\n             Robot robot = new Robot(); // instantiated robot class\n             robot.keyPress(KeyEvent.VK_CONTROL); // with robot class you can easily achieve anything if you know the shortcut keys\n             robot.keyPress(KeyEvent.VK_2); // here, we have just pressed ctrl+2\n             robot.keyRelease(KeyEvent.VK_CONTROL); // once we press and release ctrl+2, it will go to the second tab.\n             robot.keyRelease(KeyEvent.VK_2); //if you again want to go back to first tab press and release vk_1\n             }\n}"
+    },
+    {
+      "title": "Write a Java Program to find the duplicate characters in a string",
+      "category": "5",
+      "details": "public class DuplicateCharacters {\n          \n          public static void main(String[] args) {\n                   // TODO Auto-generated method stub\n                  String str = new String(\"Sakkett\");\n                  int count = 0;\n                  char[] chars = str.toCharArray();\n                  System.out.println(\"Duplicate characters are:\");\n                  for (int i=0; i&lt;str.length();i++) {\n                              for(int j=i+1; j&lt;str.length();j++) {\n                                         if (chars[i] == chars[j]) {\n                                                    System.out.println(chars[j]);\n                                                    count++;\n                                                    break;\n                                          }\n                               }\n                   }\n           }\n \n}"
+    },
+    {
+      "title": "Write a Java Program to find the second-highest number in an array",
+      "category": "5",
+      "details": "public class SecondHighestNumberInArray {\npublic static void main(String[] args)\n    {\n        int arr[] = { 100,14, 46, 47, 94, 94, 52, 86, 36, 94, 89 };\n        int largest = 0;\n        int secondLargest = 0;\n        System.out.println(\"The given array is:\");\n        for (int i = 0; i < arr.length; i++)\n        {\n            System.out.print(arr[i] + \"\\t\");\n        }\n        for (int i = 0; i < arr.length; i++)\n        {\n            if (arr[i] > largest)\n            {\n                secondLargest = largest;\n                largest = arr[i];\n            }\n            else if (arr[i] > secondLargest)\n            {\n                secondLargest = arr[i];\n            }\n        }\n        System.out.println(\"\\nSecond largest number is:\" + secondLargest);\n        System.out.println(\"Largest Number is: \"  +largest);\n    }\n}"
+    },
+    {
+      "title": "Write a Java Program to check Armstrong number",
+      "category": "5",
+      "details": "class Armstrong{  \n public static void main(String[] args)  {  \n   int c=0,a,temp;  \n   int n=153;//It is the number to check Armstrong  \n   temp=n;  \n   while(n&gt;0)  \n   {  \n   a=n%10;  \n   n=n/10;  \n    c=c+(a*a*a);  \n    }  \n    if(temp==c)  \n    System.out.println(\"armstrong number\");   \n    else \n        System.out.println(\"Not armstrong number\");   \n   }  \n}"
+    },
+    {
+      "title": "Write a Java Program to remove all white spaces from a string with using replace()",
+      "category": "5",
+      "details": "class RemoveWhiteSpaces\n{\n    public static void main(String[] args)\n    {\n        String str1 = \"Saket Saurav        is a QualityAna    list\";\n  \n        //1. Using replaceAll() Method\n  \n        String str2 = str1.replaceAll(\"\\\\s\", \"\");\n  \n        System.out.println(str2);\n  \n           }\n}\n}"
+    },
+    {
+      "title": "Write a Java Program to remove all white spaces from a string without using replace()",
+      "category": "5",
+      "details": "class RemoveWhiteSpaces\n{\n    public static void main(String[] args)\n    {\n        String str1 = \"Saket Saurav        is an Autom ation Engi ne      er\";\n  \n        char[] chars = str1.toCharArray();\n  \n        StringBuffer sb = new StringBuffer();\n  \n        for (int i = 0; i &lt; chars.length; i++)\n        {\n            if( (chars[i] != ' ') &amp;&amp; (chars[i] != '\\t') )\n            {\n                sb.append(chars[i]);\n            }\n        } \n        System.out.println(sb);           //Output : CoreJavajspservletsjdbcstrutshibernatespring\n    }\n}"
+    }
+  ]
+}

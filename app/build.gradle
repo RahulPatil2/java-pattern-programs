@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 36
+    buildToolsVersion '34.0.0'
+    defaultConfig {
+        applicationId "com.java.pattern.program"
+        minSdkVersion 21
+        compileSdkVersion 36
+        versionCode 8
+        versionName "1.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.java.pattern.program'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-ads:22.2.0' // Use the appropriate version
+
+    implementation 'com.google.android.gms:play-services-ads:22.2.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // Testing dependencies
+    implementation 'androidx.test:monitor:1.6.1'
+    implementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    androidTestImplementation 'junit:junit:4.13.2'
+}
+apply plugin: 'com.google.gms.google-services'
